@@ -1,21 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Map Example</title>
+    <title>HTML File Search</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <h1>Explore the Workplace</h1>
-    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
-    <map name="workmap">
-        <!-- Define a rectangular clickable area for the computer -->
-        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-        <!-- Define a rectangular clickable area for the phone -->
-        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-        <!-- Define a circular clickable area for the coffee cup -->
-        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
-    </map>
+    <h1>Search for an HTML File</h1>
+    <input type="text" id="searchInput" placeholder="Enter file name...">
+    <button onclick="searchFile()">Search</button>
+    <div id="searchResults"></div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
